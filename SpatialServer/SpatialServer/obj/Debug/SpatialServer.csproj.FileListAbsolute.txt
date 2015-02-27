@@ -1,0 +1,11 @@
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\SpatialServer\bin\Debug\SpatialServer.dll.config
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\SpatialServer\bin\Debug\SpatialServer.dll
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\SpatialServer\bin\Debug\SpatialServer.pdb
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\SpatialServer\bin\Debug\DuoVia.FuzzyStrings.dll
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\SpatialServer\bin\Debug\FuzzyString.dll
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\SpatialServer\bin\Debug\DuoVia.FuzzyStrings.pdb
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\SpatialServer\bin\Debug\FuzzyString.pdb
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\SpatialServer\obj\Debug\SpatialServer.dll
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\SpatialServer\obj\Debug\SpatialServer.pdb
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\SpatialServer\bin\Debug\SqlPermit2GIS.bat
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\SpatialServer\obj\Debug\SpatialServer.csprojResolveAssemblyReference.cache

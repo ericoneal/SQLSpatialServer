@@ -1,0 +1,8 @@
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\bin\Debug\SendDate2FileGDB.exe.config
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\bin\Debug\SendDate2FileGDB.exe
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\bin\Debug\SendDate2FileGDB.pdb
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\bin\Debug\Esri.FileGDBAPI.dll
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\bin\Debug\Esri.FileGDBAPI.pdb
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\obj\Debug\SendDate2FileGDB.csprojResolveAssemblyReference.cache
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\obj\Debug\SendDate2FileGDB.exe
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\obj\Debug\SendDate2FileGDB.pdb

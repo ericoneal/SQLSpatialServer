@@ -1,0 +1,90 @@
+﻿
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.12/dijit/themes/nihilo/nihilo.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.12/esri/css/esri.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <script src="http://js.arcgis.com/3.12/"></script>
+    <script src="//code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script src="js/map.js"></script>
+    
+    <script>
+        initialize();
+    </script>
+
+  </head>
+  <body class="nihilo">
+    <div id="mainWindow" 
+         data-dojo-type="dijit/layout/BorderContainer" 
+         data-dojo-props="design:'headline',gutters:false"
+         style="width: 100%; height: 100%; margin: 0;">
+      <div id="header" 
+           data-dojo-type="dijit/layout/ContentPane"
+           data-dojo-props="region:'top'">
+       ESRI File Geodatabase Geocode/Query/Add
+        <div id="subheader">without ArcServer</div>
+      </div>
+      <div id="map" class="shadow" 
+           data-dojo-type="dijit/layout/ContentPane"
+           data-dojo-props="region:'center'">
+            <img id="loadingImg" src="images/loading.gif" style="position:absolute; right:512px; top:256px; z-index:100;" />
+        <!-- drop shadow divs -->
+        <div id="ds">
+          <div id="ds-h">
+            <div class="ds h1 o1"></div>
+            <div class="ds h2 o2"></div>
+            <div class="ds h3 o3"></div>
+            <div class="ds h4 o4"></div>
+            <div class="ds h5 o5"></div>
+          </div>
+          <div id="ds-r">
+            <div class="ds v1 o1"></div>
+            <div class="ds v2 o2"></div>
+            <div class="ds v3 o3"></div>
+            <div class="ds v4 o4"></div>
+            <div class="ds v5 o5"></div>
+          </div>
+        </div> <!-- end drop shadow divs -->
+            
+      </div>
+      <div id="rightPane"
+           data-dojo-type="dijit/layout/ContentPane"
+           data-dojo-props="region:'right'">
+
+            <label for="txtAddress" style="font-size:15px;">Address:</label>
+            <input type="text" name="txtAddress" id="txtAddress"  value="" placeholder="" />     <br />
+            <div id="btnVerifyAddress" class="input" >Verify Address</div>
+
+    
+        <hr />
+        <div id="Info">
+            <label for="txtCouncilMan" style="font-size:15px;">Council Person:</label>
+            <input type="text" name="txtCouncilMan" id="txtCouncilMan"  value="" placeholder="" />     <br />
+
+            <label for="txtLanduse" style="font-size:15px;">Landuse:</label>
+            <textarea  type="text" name="txtLanduse" id="txtLanduse"   placeholder="" >  </textarea>   <p />
+        </div>
+        <hr />
+              <div id="Div1">
+                  Add Permit <p></p>
+              <label for="txtPermitNo" style="font-size:15px;">Permit Number:</label>
+            <input type="text" name="txtPermitNo" id="txtPermitNo"  value="" placeholder="" />     <p />
+
+              <label for="txtProjectNo" style="font-size:15px;">Project Number:</label>
+            <input type="text" name="txtProjectNo" id="txtProjectNo"  value="" placeholder="" />     <p />
+
+              <label for="txtInspector" style="font-size:15px;">Inspector Name:</label>
+            <input type="text" name="txtInspector" id="txtInspector"  value="" placeholder="" />     <p />
+            <div id="btnAddPermit" class="input" >Add Permit</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

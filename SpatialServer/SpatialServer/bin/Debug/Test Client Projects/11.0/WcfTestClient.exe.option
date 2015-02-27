@@ -1,0 +1,5 @@
+SecurityPrompt : Disabled
+RefreshPrompt : Enabled
+RegenerateConfig : Enabled
+ProjectBase:C:\Users\eoneal\AppData\Local\Temp\Test Client Projects\11.0
+http://localhost/arcgis/rest/services/General/LWCComposite/GeocodeServer/mex

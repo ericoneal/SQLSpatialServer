@@ -1,0 +1,1 @@
+echo 'doodie' > C:\Sourcecode\Other\SQLSpatialServer\publish\bin\doodie.txt

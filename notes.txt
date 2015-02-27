@@ -1,0 +1,46 @@
+MSSQL:server=.\sqlexpress;database=Spatial;User ID=sa;Password=doodie101
+
+ogr2ogr -overwrite -f  MSSQLSpatial -lco "GEOM_NAME=geom" "MSSQL:server=.\sqlexpress;database=Spatial;User ID=sa;Password=doodie101" "C:\Sourcecode\Other\SQLSpatialServer\data\jefferson.gdb" "address"
+ogr2ogr -overwrite -f MSSQLSpatial -lco "GEOM_NAME=geom" "MSSQL:server=.\sqlexpress;database=Spatial;User ID=sa;Password=doodie101" "C:\Sourcecode\Other\SQLSpatialServer\data\jefferson.gdb" "MetroCouncil"
+ogr2ogr -overwrite -f MSSQLSpatial -lco "GEOM_NAME=geom" "MSSQL:server=.\sqlexpress;database=Spatial;User ID=sa;Password=doodie101" "C:\Sourcecode\Other\SQLSpatialServer\data\jefferson.gdb" "Permits"
+ogr2ogr -overwrite -f MSSQLSpatial -lco "GEOM_NAME=geom" -lco PRECISION=FALSE "MSSQL:server=.\sqlexpress;database=Spatial;User ID=sa;Password=doodie101" "C:\Sourcecode\Other\SQLSpatialServer\data\jefferson.gdb" "landuse"
+
+ogrinfo -sql "create spatial index on address" "MSSQL:server=.\sqlexpress;database=Spatial;User ID=sa;Password=doodie101"
+ogrinfo -sql "create spatial index on MetroCouncil" "MSSQL:server=.\sqlexpress;database=Spatial;User ID=sa;Password=doodie101"
+ogrinfo -sql "create spatial index on Permits" "MSSQL:server=.\sqlexpress;database=Spatial;User ID=sa;Password=doodie101"
+ogrinfo -sql "create spatial index on landuse" "MSSQL:server=.\sqlexpress;database=Spatial;User ID=sa;Password=doodie101"
+ogrinfo -al "C:\Sourcecode\Other\PhonyArcServer\data\jefferson.gdb"
+
+QUURIES
+
+//Get Address Point
+SELECT ogr_geometry.STAsText() FROM address WHERE FULL_ADDRESS = '6905 NORWAY DR'
+
+//INSERT ADDRESS
+INSERT INTO permits
+                         (geom, permitno, projectno, address, inspector)
+VALUES        (geometry::Point(1196582.25, 243906.21875, 2246), '1', '1', 'test', 'eao')
+
+
+
+
+//Get Metro Council by address name
+Select COUN_NAME from metrocouncil as mc inner join
+ address on address.geom.STIntersects(mc.geom) = 1
+where FULL_ADDRESS = '6905 NORWAY DR'
+
+
+//Get Metro Council by XY
+Select COUN_NAME 
+from metrocouncil 
+where geom.STIntersects(geometry::Point(1196582.25, 243906.21875, 2246)) = 1
+
+
+LINKS:
+http://localhost/PhonyArcServerTest/index.html
+ http://localhost/sqlspatialservices/SpatialServer.SpatialQuery.svc/query?x=1264176&y=297387.15625&layer=MetroCouncil
+ http://localhost/sqlspatialservices/SpatialServer.Geocoder.svc/findAddressCandidates?SingleLine=6905%20norway
+ http://localhost/arcgis/rest/services/Layers/query?x=1264176&y=297387.15625&layer=MetroCouncil
+ http://localhost/arcgis/rest/services/General/LWCComposite/GeocodeServer/findAddressCandidates?SingleLine=
+
+http://localhost/spatialserver/

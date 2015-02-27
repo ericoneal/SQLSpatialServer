@@ -1,0 +1,7 @@
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\bin\x86\Debug\SendDate2FileGDB.exe.config
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\bin\x86\Debug\SendDate2FileGDB.exe
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\bin\x86\Debug\SendDate2FileGDB.pdb
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\bin\x86\Debug\Esri.FileGDBAPI.dll
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\bin\x86\Debug\Esri.FileGDBAPI.pdb
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\obj\x86\Debug\SendDate2FileGDB.exe
+C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\obj\x86\Debug\SendDate2FileGDB.pdb

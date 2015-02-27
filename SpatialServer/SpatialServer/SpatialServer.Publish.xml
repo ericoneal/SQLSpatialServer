@@ -1,0 +1,17 @@
+<publishData>
+  <publishTarget publishUrl="C:\Sourcecode\Other\SQLSpatialServer\publish\">
+    <file relUrl="Web.config" publishTime="02/04/2015 09:16:42" />
+    <file relUrl="bin/DuoVia.FuzzyStrings.dll" publishTime="12/30/2014 16:37:27" />
+    <file relUrl="bin/SpatialServer.dll" publishTime="02/04/2015 14:45:40" />
+    <file relUrl="bin/SpatialServer.dll.config" publishTime="02/04/2015 09:16:42" />
+    <file relUrl="bin/SpatialServer.pdb" publishTime="02/04/2015 14:45:40" />
+    <file relUrl="bin/FuzzyString.dll" publishTime="12/19/2014 14:17:16" />
+    <file relUrl="bin/SqlPermit2GIS.bat" publishTime="02/03/2015 10:31:19" />
+    <file relUrl="bin/FuzzyString.pdb" publishTime="12/19/2014 14:17:16" />
+    <file relUrl="SpatialServer.Geocoder.svc" publishTime="02/04/2015 14:45:44" />
+    <file relUrl="SpatialServer.SpatialQuery.svc" publishTime="02/04/2015 14:45:44" />
+    <file relUrl="bin/DuoVia.FuzzyStrings.pdb" publishTime="12/30/2014 16:37:27" />
+    <file relUrl="SpatialServer.LayerEdit.svc" publishTime="02/04/2015 14:45:44" />
+    <file relUrl="bin\Test Client Projects\11.0/WcfTestClient.exe.option" publishTime="02/02/2015 13:59:23" />
+  </publishTarget>
+</publishData>

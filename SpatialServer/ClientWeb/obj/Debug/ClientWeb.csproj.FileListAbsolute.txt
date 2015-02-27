@@ -1,0 +1,10 @@
+C:\Sourcecode\Other\PhonyArcServer\PhonyArcServer\ClientWeb\bin\ClientWeb.dll
+C:\Sourcecode\Other\PhonyArcServer\PhonyArcServer\ClientWeb\bin\ClientWeb.pdb
+C:\Sourcecode\Other\PhonyArcServer\PhonyArcServer\ClientWeb\obj\Debug\ClientWeb.csprojResolveAssemblyReference.cache
+C:\Sourcecode\Other\PhonyArcServer\PhonyArcServer\ClientWeb\obj\Debug\ClientWeb.dll
+C:\Sourcecode\Other\PhonyArcServer\PhonyArcServer\ClientWeb\obj\Debug\ClientWeb.pdb
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\ClientWeb\bin\ClientWeb.dll
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\ClientWeb\bin\ClientWeb.pdb
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\ClientWeb\obj\Debug\ClientWeb.csprojResolveAssemblyReference.cache
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\ClientWeb\obj\Debug\ClientWeb.dll
+C:\Sourcecode\Other\SQLSpatialServer\SpatialServer\ClientWeb\obj\Debug\ClientWeb.pdb

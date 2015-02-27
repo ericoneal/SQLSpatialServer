@@ -1,0 +1,69 @@
+//allow exe
+
+-- To allow advanced options to be changed.
+EXEC sp_configure 'show advanced options', 1;
+GO
+-- To update the currently configured value for advanced options.
+RECONFIGURE;
+GO
+-- To enable the feature.
+EXEC sp_configure 'xp_cmdshell', 1;
+GO
+-- To update the currently configured value for this feature.
+RECONFIGURE;
+GO
+
+
+
+
+
+//trigger
+
+USE [Spatial];
+go
+
+CREATE TRIGGER permit2FileGDB
+   ON   permits
+   AFTER INSERT,UPDATE
+AS 
+BEGIN
+SET NOCOUNT ON;
+	DECLARE @geom geometry
+    DECLARE @PermitNo varchar(20)
+    DECLARE @ProjectNo varchar(20)
+    DECLARE @Address varchar(8000)
+    DECLARE @Inspector varchar(100)
+    SELECT
+		@geom = inserted.geom,
+		@PermitNo = inserted.permitno,
+		@ProjectNo = inserted.projectno,
+		@Address = inserted.address,
+		@Inspector = inserted.inspector
+      
+    FROM
+      inserted
+   
+
+declare @cmd varchar(5000)
+SET @cmd = 'C:\Sourcecode\Other\SQLSpatialServer\SendDate2FileGDB\SendDate2FileGDB\bin\Debug\SendDate2FileGDB.exe "' + Str(@geom.STX,10,6) + '" "' + Str(@geom.STY,10,6) + '" "' + @PermitNo + '" "' + @ProjectNo + '" "' + @Address + '" "' + @Inspector
+
+
+
+    EXEC master..xp_CMDShell @cmd
+ 
+END
+
+GO
+
+
+
+
+//Save batch file as ANSI for use by trigger
+http://stackoverflow.com/questions/4337445/how-do-i-resolve-echo-is-not-a-recognized-command
+
+
+//View all triggers
+select * from sys.triggers
+
+//remove trigger
+drop trigger permit2FileGDB
